@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  background-color: #353b48;
+  font-family: Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  padding: 10px 0 10px 30px;
+  color: #dcdde1;
+  font-size: 32px;
+}
+
+.find-task {
+  position: absolute;
+  top: 5%;
+  left: 80%;
+  width: 140px;
+  height: 20px;
+}
+
+.search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  border-radius: 2px;
+  padding: 10px;
+  background-color: white;
+  transition: .4s;
+  color: #353b48;
+}
+
+.search:hover {
+  box-shadow: 0 0 10px #dcdde1;
+}
+
+.find {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  height: 100%;
+  background-color: black;
+  color: #dcdde1;
+  padding: 10px;
+  border-radius: 2px;
+  transition: .4s;
+  line-height: 0;
+}
+
+.find:hover {
+  box-shadow: 0 0 10px #dcdde1;
+}
+
+.add-task {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 40px;
+}
+
+.text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  padding: 10px 0 10px 30px;
+  color: #353b48;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.text:hover {
+  box-shadow: 0 0 10px #dcdde1;
+}
+
+.text:focus {
+  box-shadow: 0 0 30px black;
+}
+
+.add {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  color: #353b48;
+  background-color: #0097e6;
+  color: #f5f6fa;
+  padding: 10px;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.add:hover {
+  box-shadow: 0 0 10px #dcdde1;
+}
+
+ul {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 45%;
+  list-style: none;
+  color: wheat;
+}
+
+li {
+  position: relative;
+  border: 1px solid gray;
+  padding: 10px 50px 10px 10px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%, -50%);
+  padding: 5px 10px;
+  background-color: transparent;
+  color: honeydew;
+}
+
+@media (max-width: 768px) {
+  ul {
+    top: 50%
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .find-task {
+    left: 60%;
+  }
+}
+
+@media (max-width: 320px) {
+  .find-task {
+    left: 50%;
+  }
+
+  h1 {
+    top: 20%;
+    left: 45%;
+  }
+
+  ul {
+    top: 60%
+  }
+
+  .add-task {
+    top: 30%;
+  }
+}
+
+
+@media (orientation: landscape) {
+  ul {
+    top: 70%;
+  }
+
+  .add-task {
+    top: 30%;
+  }
+
+  .find-task {
+    left: 70%;
+  }
+}
